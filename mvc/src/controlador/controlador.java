@@ -37,10 +37,12 @@ public class controlador implements ActionListener {
          modelo.setNombre(ventana.txtnombre.getText());
         ventana.jTextArea1.setText(ventana.jTextArea1.getText()+"\n"+modelo.getNombre());
         System.out.println(modelo.getNombre());
+        
+        
+        }
     }
     
     
 
     
-    
-}
+  

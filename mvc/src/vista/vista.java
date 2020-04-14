@@ -5,6 +5,8 @@
  */
 package vista;
 
+import modelo.Validar;
+
 /**
  *
  * @author sergio
@@ -14,8 +16,11 @@ public class vista extends javax.swing.JFrame {
     /**
      * Creates new form vista
      */
+    
+    Validar v = new Validar();
     public vista() {
         initComponents();
+        v.validarLetras(txtnombre);
     }
 
     /**
@@ -33,6 +38,12 @@ public class vista extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        txtnombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtnombreActionPerformed(evt);
+            }
+        });
 
         btnagregar.setText("AGREGAR");
 
@@ -70,6 +81,11 @@ public class vista extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnombreActionPerformed
+        // TODO add your handling code here:
+    
+    }//GEN-LAST:event_txtnombreActionPerformed
 
     
  
